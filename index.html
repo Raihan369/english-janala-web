@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Janala | Best Platform for Learning English</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+
+    <!-- font link -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+     <!-- tailwind and daisyui cdn link  -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- custom css link  -->
+     <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="-1"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+
+        <li class="">
+      <a href="" class="" ><i class="fa-solid fa-circle-question"></i> FAQ</a>
+    </li>
+    <li class="">
+      <a href="" class="" ><i class="fa-solid fa-book-open"></i> Learn</a>
+    </li>
+    <li class="">
+      <a href="" class="" ><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+    </li>
+      </ul>
+    </div>
+    <a href="" class="flex items-center gap-1 ">
+        <span class="text-lg font-bold">English</span>
+        <img src="./assets/logo.png" alt="">
+        <span class="font-bangla text-lg font-semibold">জানালা</span>
+    </a>
+  </div>
+  <div class="navbar-end hidden lg:flex space-x-4">
+    <li class="menu menu-horizontal px-1">
+      <a href="" class="btn btn-outline btn-primary" ><i class="fa-solid fa-circle-question"></i> FAQ</a>
+    </li>
+    <li class="menu menu-horizontal px-1">
+      <a href="" class="btn btn-outline btn-primary" ><i class="fa-solid fa-book-open"></i> Learn</a>
+    </li>
+    <li class="menu menu-horizontal px-1">
+      <a href="" class="btn btn-outline btn-primary" ><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+    </li>
+  </div>
+</div>
+    </header>
+
+    <section class="flex flex-col-reverse md:flex-row gap-10  justify-between items-center py-5 w-11/12 mx-auto ">
+        <div class="content flex-1 text-center md:text-left">
+            <h2 class="text-4xl font-bold mb-5"><span class="text-sky-700">English</span> is Easy!!</h2>
+            <p class="font-bangla">
+                আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ
+            </p>
+            <br>
+
+            <div class="card w-full md:max-w-sm bg-base-100 p-4 ">
+                <form class="flex flex-col gap-3" novalidate>
+                    <label class="sr-only" for="email">Email</label>
+                    <input id="email" type="email" class="input input-bordered input-sm w-full" placeholder="Email" required />
+                    <label class="sr-only" for="password">Password</label>
+                    <input id="password" type="password" class="input input-bordered input-sm w-full" placeholder="Password" required />
+                    <button type="submit" class="btn btn-primary w-full">Get Started</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="image flex-1">
+            <img src="./assets/raihan.png" alt="">
+        </div>
+    </section>
+
+    <section>
+        <h2 class="text-4xl font-bold mb-5 text-center"><span class="text-sky-700">Let's</span> Learn Vocabularies</h2>
+
+        <div id="level-container" class="flex gap-5 justify-center flex-wrap mb-10">
+            <!-- levels will be appended here dynamically -->
+
+        </div>
+    </section>
+
+    <section class="flex justify-center">
+      <div class="join">
+  <div>
+    <label class="input validator join-item">
+        <g
+          stroke-linejoin="round"
+          stroke-linecap="round"
+          stroke-width="2.5"
+          fill="none"
+          stroke="currentColor"
+        >
+          <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+        </g>
+      </svg>
+      <input type="text" placeholder="Search Vocabulary now.." required />
+    </label>
+  
+  </div>
+  <button class="btn btn-primary join-item">Search</button>
+</div>
+    </section>
+
+
+    <section id="spinner" class="flex justify-center items-center py-10 hidden">
+      <span class="loading loading-bars loading-xl"></span>
+    </section>
+
+    <section id="word-container" class="bg-gray-100 p-10 w-11/12 mx-auto rounded-lg shadow-lg my-10 grid-cols-3 gap-5  md:grid">
+        <!-- words will be displayed here dynamically -->
+
+        <div class="text-center bg-sky-100 col-span-full rounded-xl py-10 space-y-6 bangla-font">
+          <p class="text-xl text-gray-400 font-medium ">আপনি এখনো কোন Lesson Select করেন নি</p>
+          <p class="text-4xl font-bold">একটি Lesson Select করুন।</p>
+        </div>
+    </section>
+
+<!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+<dialog id="word-modal" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    
+    <div id="details-container" class="space-y-5">
+
+      <!-- word details will be displayed here dynamically -->
+
+
+    </div>
+
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
+<!-- start from 33.10  -->
